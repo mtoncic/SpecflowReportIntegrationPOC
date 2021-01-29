@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecflowReportIntegrationPOC", "SpecflowReportIntegrationPOC\SpecflowReportIntegrationPOC.csproj", "{34B7D82E-D4A1-493E-AA19-679DDDDDC005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{C68D75FD-67B3-49E7-B777-BBF84060432A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34B7D82E-D4A1-493E-AA19-679DDDDDC005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B7D82E-D4A1-493E-AA19-679DDDDDC005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B7D82E-D4A1-493E-AA19-679DDDDDC005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B7D82E-D4A1-493E-AA19-679DDDDDC005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68D75FD-67B3-49E7-B777-BBF84060432A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68D75FD-67B3-49E7-B777-BBF84060432A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68D75FD-67B3-49E7-B777-BBF84060432A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68D75FD-67B3-49E7-B777-BBF84060432A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65E02113-8CC3-416A-AEE1-E7653B57F3E9}
+	EndGlobalSection
+EndGlobal

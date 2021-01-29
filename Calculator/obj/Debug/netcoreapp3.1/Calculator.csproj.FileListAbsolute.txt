@@ -1,0 +1,9 @@
+C:\PROJECTS\SpecflowReportIntegrationPOC\Calculator\bin\Debug\netcoreapp3.1\Calculator.deps.json
+C:\PROJECTS\SpecflowReportIntegrationPOC\Calculator\bin\Debug\netcoreapp3.1\Calculator.dll
+C:\PROJECTS\SpecflowReportIntegrationPOC\Calculator\bin\Debug\netcoreapp3.1\Calculator.pdb
+C:\PROJECTS\SpecflowReportIntegrationPOC\Calculator\obj\Debug\netcoreapp3.1\Calculator.csprojAssemblyReference.cache
+C:\PROJECTS\SpecflowReportIntegrationPOC\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfoInputs.cache
+C:\PROJECTS\SpecflowReportIntegrationPOC\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfo.cs
+C:\PROJECTS\SpecflowReportIntegrationPOC\Calculator\obj\Debug\netcoreapp3.1\Calculator.csproj.CoreCompileInputs.cache
+C:\PROJECTS\SpecflowReportIntegrationPOC\Calculator\obj\Debug\netcoreapp3.1\Calculator.dll
+C:\PROJECTS\SpecflowReportIntegrationPOC\Calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
