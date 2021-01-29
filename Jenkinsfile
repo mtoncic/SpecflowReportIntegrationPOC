@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'dotnet test'
+                sh 'dotnet test --logger "trx;LogFileName=TestResults.trx" --results-directory "./TestResults/"'
             }
         }
     }
