@@ -12,4 +12,10 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            archiveArtifacts artifacts: '*/TestResults/*.trx', fingerprint: true
+            junit 'build/reports/**/*.xml'
+        }
+    }
 }
