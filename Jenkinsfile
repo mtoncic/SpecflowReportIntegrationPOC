@@ -15,8 +15,9 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'TestResults/*.trx', fingerprint: true
+            mstest testResultsFile:"**/*.trx", keepLongStdio: true
             junit '**/*.trx'
-            mstest '**/*.trx'
+            junit '**/*.xml'
         }
     }
 }
