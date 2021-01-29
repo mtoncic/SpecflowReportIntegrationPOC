@@ -16,7 +16,7 @@ pipeline {
         always {
             archiveArtifacts artifacts: 'TestResults/*.trx', fingerprint: true
             mstest testResultsFile:"**/*.trx", keepLongStdio: true
-            step([$class: 'XrayImportBuilder', endpointName: '/cucumber', importFilePath: 'cucumber_xray_tests/data.json', serverInstance: 'b3beffcf-1712-4a87-99f7-b7f9d4a0c25c'])
+            step([$class: 'XrayImportBuilder', endpointName: '/cucumber', importFilePath: 'TestResults/TestResults.trx', serverInstance: 'b3beffcf-1712-4a87-99f7-b7f9d4a0c25c'])
         }
     }
 }
