@@ -15,7 +15,6 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'TestResults/*.trx', fingerprint: true
-            mstest testResultsFile:"**/*.trx", keepLongStdio: true
         }
     }
 }
