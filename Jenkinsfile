@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'dotnet test --logger "trx;LogFileName=TestResults.xml" --results-directory "./TestResults/"'
+                sh 'dotnet test --logger "junit;LogFileName=TestResults.xml" --results-directory "./TestResults/"'
             }
         }
     }
@@ -16,7 +16,7 @@ pipeline {
         always {
             archiveArtifacts artifacts: 'TestResults/*.xml', fingerprint: true
             //mstest testResultsFile:"**/*.trx", keepLongStdio: true
-            step([$class: 'XrayImportBuilder', endpointName: '/cucumber', importFilePath: 'TestResults/TestResults.xml', serverInstance: 'b3beffcf-1712-4a87-99f7-b7f9d4a0c25c'])
+            step([$class: 'XrayImportBuilder', endpointName: '/junit', fixVersion: 'v3.0', importFilePath: 'TestResults/TestResults.xml', projectKey: 'XRAYD', serverInstance: 'b3beffcf-1712-4a87-99f7-b7f9d4a0c25c'])
         }
     }
 }
