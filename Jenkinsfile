@@ -16,7 +16,7 @@ pipeline {
         always {
             archiveArtifacts artifacts: 'TestResults/*.xml', fingerprint: true
             //mstest testResultsFile:"**/*.trx", keepLongStdio: true
-            step([$class: 'XrayImportFeatureBuilder', credentialId: '', folderPath: '**/Features/', lastModified: '', preconditions: '', projectKey: 'XRAYD', serverInstance: 'SERVER-b3beffcf-1712-4a87-99f7-b7f9d4a0c25c', testInfo: ''])
+            step([$class: 'XrayImportFeatureBuilder', credentialId: '', folderPath: 'Features/', lastModified: '', preconditions: '', projectKey: 'XRAYD', serverInstance: 'SERVER-b3beffcf-1712-4a87-99f7-b7f9d4a0c25c', testInfo: ''])
             step([$class: 'XrayImportBuilder', endpointName: '/junit', importFilePath: 'TestResults/TestResults.xml', projectKey: 'XRAYD', serverInstance: 'b3beffcf-1712-4a87-99f7-b7f9d4a0c25c'])
         }
     }
